@@ -1,0 +1,92 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://images.unsplash.com/photo-1642383511822-b493c213faca?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    font-family: "Lora", serif;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #9a85f5;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-family: "Great Vibes", cursive;
+    font-size: 32px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(45deg, #A8D5BA, #C5B4E3);
+    color: black;
+    padding: 12px 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Layout Adjustments */
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Daily Log - Two Column Layout */
+.daily-log-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Categories Titles */
+h3 {
+    font-family: "Great Vibes", cursive;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #554E8F;
+}
+
+/* Arrange Checkbox Options in a Row */
+.option-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.option-row label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .daily-log-container {
+        grid-template-columns: 1fr;
+    }
+}

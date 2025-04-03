@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Log</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>DAILY ACTIVITIES</header>
+    
+    <div class="container">
+        <form id="dailyLogForm">
+            <h2 class="analysis-title">Select Your Activities</h2>
+            <p>Understanding your daily activities is crucial for tracking your mental wellness.</p>
+            <p>Consistency is key. Form healthy habits to better your mental health</p>
+            <p>Ask yourself "What did I do today?"</p>
+            <div class="daily-log-container">
+                <!-- People Section -->
+                <div>
+                    <h3>People</h3>
+                    <div class="option-row">
+                        <label><input type="checkbox" id="family" data-category="people"> Family</label>
+                        <label><input type="checkbox" id="friends" data-category="people"> Friends</label>
+                        <label><input type="checkbox" id="colleagues" data-category="people"> Colleagues</label>
+                        <label><input type="checkbox" id="acquaintances" data-category="people"> Acquaintances</label>
+                        <label><input type="checkbox" id="none-people" data-category="people"> None</label>
+                    </div>
+                </div>
+
+                <!-- Hobbies Section -->
+                <div>
+                    <h3>Hobbies</h3>
+                    <div class="option-row">
+                        <label><input type="checkbox" id="reading" data-category="hobbies"> Reading</label>
+                        <label><input type="checkbox" id="gaming" data-category="hobbies"> Gaming</label>
+                        <label><input type="checkbox" id="music" data-category="hobbies"> Music</label>
+                        <label><input type="checkbox" id="art" data-category="hobbies"> Art</label>
+                        <label><input type="checkbox" id="none-hobbies" data-category="hobbies"> None</label>
+                    </div>
+                </div>
+
+                <!-- Exercise Section -->
+                <div>
+                    <h3>Exercise</h3>
+                    <div class="option-row">
+                        <label><input type="checkbox" id="gym" data-category="exercise"> Gym</label>
+                        <label><input type="checkbox" id="yoga" data-category="exercise"> Yoga</label>
+                        <label><input type="checkbox" id="running" data-category="exercise"> Running</label>
+                        <label><input type="checkbox" id="cycling" data-category="exercise"> Cycling</label>
+                        <label><input type="checkbox" id="none-exercise" data-category="exercise"> None</label>
+                    </div>
+                </div>
+
+                <!-- Meals Section -->
+                <div>
+                    <h3>Meals</h3>
+                    <div class="option-row">
+                        <label><input type="checkbox" id="breakfast" data-category="meals"> Breakfast</label>
+                        <label><input type="checkbox" id="lunch" data-category="meals"> Lunch</label>
+                        <label><input type="checkbox" id="dinner" data-category="meals"> Dinner</label>
+                        <label><input type="checkbox" id="snacks" data-category="meals"> Snacks</label>
+                        <label><input type="checkbox" id="none-meals" data-category="meals"> None</label>
+                    </div>
+                </div>
+
+                <!-- Self Care Section -->
+                <div>
+                    <h3>Self Care</h3>
+                    <div class="option-row">
+                        <label><input type="checkbox" id="meditation" data-category="self-care"> Meditation</label>
+                        <label><input type="checkbox" id="journaling" data-category="self-care"> Journaling</label>
+                        <label><input type="checkbox" id="therapy" data-category="self-care"> Therapy</label>
+                        <label><input type="checkbox" id="nature" data-category="self-care"> Nature</label>
+                        <label><input type="checkbox" id="none-self-care" data-category="self-care"> None</label>
+                    </div>
+                </div>
+
+                <!-- Events Section -->
+                <div>
+                    <h3>Events</h3>
+                    <div class="option-row">
+                        <label><input type="checkbox" id="party" data-category="events"> Party</label>
+                        <label><input type="checkbox" id="school" data-category="events"> School</label>
+                        <label><input type="checkbox" id="work" data-category="events"> Work</label>
+                        <label><input type="checkbox" id="meetup" data-category="events"> Meetup</label>
+                        <label><input type="checkbox" id="none-events" data-category="events"> None</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+            <h2>Remember, every little thing counts!</h2>
+            <h3>Quote</h3>
+            <p>"Self-care is how you take your power back." — Lalah Delia</p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

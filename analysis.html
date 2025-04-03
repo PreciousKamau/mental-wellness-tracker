@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Wellness Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container fade-in">
+        <header>WELLNESS ANALYSIS</header>
+        <p>Delve into geting insights on your progress over time.</p> 
+        <p>Understand your emotional patterns and daily activities.</p> 
+    </div>
+    <div class="container">
+        <h2>Emotions and Activities Cataloged</h2>   
+        <ul id="emotionsList"></ul>        
+        <ul id="peopleList"></ul>        
+        <ul id="hobbiesList"></ul>        
+        <ul id="exerciseList"></ul>        
+        <ul id="mealsList"></ul>        
+        <ul id="eventsList"></ul>
+
+        <h3>Analysis:</h3>
+        <div id="logsContainer"></div>
+
+        <h3>PROGRESS CHART:</h3>
+        <p>Visual representation of your well-being over time.</p>
+        <p>Track your progress and identify patterns.</p>
+        <p>Over time see how far you've come</p>
+        <canvas id="progressChart"></canvas>
+
+        <button onclick="location.href='emotions.html'">Go Back to Emotions</button>
+        <button onclick="location.href='daily-log.html'">Go Back to Log Activities</button>
+    </div>
+    <h2>Remember, you have come a long way to get where you are, be grateful!</h2>
+    <h3>Quote</h3>
+    <p>"The greatest glory in living lies not in never falling, but in rising every time we fall." — Nelson Mandela</p>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
